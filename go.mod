@@ -2,6 +2,11 @@ module github.com/containerd/containerd
 
 go 1.17
 
+replace (
+	github.com/containerd/stargz-snapshotter => github.com/k3s-io/stargz-snapshotter v0.13.0-k3s1
+	github.com/containerd/stargz-snapshotter/estargz => github.com/k3s-io/stargz-snapshotter/estargz v0.13.0-k3s1
+)
+
 require (
 	github.com/AdaLogics/go-fuzz-headers v0.0.0-20210715213245-6c3934b029d8
 	github.com/Microsoft/go-winio v0.5.2
